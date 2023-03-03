@@ -1,0 +1,152 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    position: initial;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.attribution a {
+    color: hsl(158, 36%, 37%);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card_photo {
+    position:relative;
+}
+
+#card_photo-desktop {
+    height: 450px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#card_photo-mobile {
+    display: none;
+}
+
+.card_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 11%;
+}
+
+h1 {
+    font-weight: 500;
+    height: auto;
+    margin: 0%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    margin: 0%;
+    color: hsl(212, 21%, 14%);
+}
+
+.card_text--description {
+    word-spacing: 2px;
+}
+
+.card_text--price {
+    display: flex;
+    margin-top: 10px;
+}
+
+.card_text--price-now {
+    color: hsl(158, 36%, 37%);
+    font-size: 32px;
+    font-family: 'Fraunces', serif;
+}
+
+.card_text--price-before {
+    text-decoration: line-through;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #313f2d;
+}
+
+@media all and (max-width:600px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        max-width: 100%;
+        margin-top: 2%;
+    }
+
+    .card_photo {
+        position: relative;
+    }
+
+    #card_photo-desktop {
+        display: none;
+    }
+
+    #card_photo-mobile {
+        display: block;
+        max-width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .card_text {
+        gap: 10px;
+        padding: 7%;
+    }
+
+    .button {
+        margin-top: 4%;
+    }
+
+    .attribution {
+        bottom: -10%;
+    }
+}
