@@ -1,0 +1,146 @@
+  * {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+  }
+
+  body {
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+  }
+
+  a {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+  }
+
+  .card {
+    max-height: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 60px auto;
+    box-shadow: 10px 10px 20px -14px hsl(224, 23%, 55%);
+  }
+
+  .card_photo img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* INTRO CARD : */
+  .card_description {
+    padding: 5% 6%;
+  }
+
+  h1 {
+    font-size: 25px;
+    font-weight: 900;
+  }
+
+  .card_description--text p {
+    opacity: 0.5;
+  }
+
+  /* ENCADRÉ RÉSUME ABONNEMENT : */
+  .card_description--abonnement {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    padding: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card_description--abonnement-resume {
+    margin-left: -20%;
+  }
+
+  h2 {
+    margin-top: 0%;
+    margin-bottom: 5%;
+  }
+
+  .card_description--abonnement a {
+    text-decoration: underline;
+  }
+
+  .card_description--abonnement a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+  }
+
+  #price {
+    opacity: 0.5;
+  }
+
+
+  /* BOUTONS FIN : */
+  .card_description--paiement {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    margin: 8% 0%;
+    box-shadow: 0px 13px 17px -1px hsla(245, 75%, 52%, 0.37);
+  }
+
+  .card_description--paiement:hover {
+    background-color: hsla(245, 75%, 52%, 0.7);
+  }
+
+  .card_description--return {
+    color: hsl(223, 47%, 23%);
+    opacity: 0.7; 
+    display: flex;
+    justify-content: center;
+  }
+
+  .card_description--return:hover {
+    opacity: 1;
+  }
+
+  /* RESPONSIVE */
+  @media all and (max-width: 1440px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+  }
+
+  @media all and (max-width: 374px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+
+    .card {
+        margin: 10% 10px;
+    }
+
+    h1 {
+        margin: auto;
+        font-size: 20px;
+    }
+
+    .card_description--abonnement {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 5%;
+    }
+
+    h2 {
+        margin-top: 10px;
+    }
+
+    .card_description--abonnement-resume {
+        margin: auto;
+      }
+  }
