@@ -1,0 +1,144 @@
+.attribution a { 
+    color: hsl(184, 100%, 22%);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+.attribution {
+    color: hsl(179, 100%, 13%);
+    text-align: center; 
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.component {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    width: auto;
+    margin: 5% 18%;
+}
+
+.card {
+    padding: 16%;
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 30%;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.button {
+    background-color: white;
+    text-decoration: none;
+    padding: 6%;
+    border-radius: 30px;
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    font-weight: 400;
+    border: 2px solid white;
+    margin-top: 30%;
+}
+
+.button:hover {
+    color: white;
+    border: 2px solid white;
+}
+
+.card_left {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.card_left_button {
+    color: hsl(31, 77%, 52%);
+}
+
+.card_left_button:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card_mid {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card_mid_button {
+    color: hsl(184, 100%, 22%);
+}
+
+.card_mid_button:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card_right {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.card_right_button {
+    color: hsl(179, 100%, 13%);
+}
+
+.card_right_button:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media all and (max-width:375px) {
+    .component {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        padding: 14%;
+    }
+
+    h1 {
+        margin-bottom: 5%;
+    }
+
+    .card_left {
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+
+    .card_right {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+
+    .button {
+        margin-top: 5%;
+        padding: 5%;
+    }
+}
